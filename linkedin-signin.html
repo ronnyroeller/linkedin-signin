@@ -158,7 +158,7 @@ LinkedInSignIn = Polymer({
 				onLoad = 'LinkedInSignIn.' + callbackName;
 			LinkedInSignIn[callbackName] = initLinkedIn;
 
-			script.setAttribute('src', '//platform.linkedin.com/in.js');
+			script.setAttribute('src', 'https://platform.linkedin.com/in.js');
 			var args = 'api_key: ' + this.clientId;
 			args += '\nonLoad: ' + onLoad;
 			if (this.authorize) {
